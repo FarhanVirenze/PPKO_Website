@@ -1,0 +1,392 @@
+/* General Styling */
+
+/* Carousel styles */
+
+/* Hide carousel when menu is active */
+.menu-active .homepage__carousel {
+    display: none;
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 768px) {
+    .menu-active .homepage__carousel {
+      display: none; /* Hide carousel images when the menu is open on smaller screens */
+    }
+  }
+  
+.homepage__carousel {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .homepage__carousel img {
+    max-height: 600px;
+    object-fit: cover; /* Ensures the images cover the carousel nicely */
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 2.5rem;
+  }
+  
+  .carousel .legend {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    position: absolute;
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 768px) {
+    .homepage__carousel img {
+      max-height: 300px; /* Reduce height for smaller screens */
+    }
+  
+    .carousel .legend {
+      font-size: 1rem;
+      padding: 5px;
+    }
+  }
+  
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background-color: var(--background-color); /* Warna latar belakang yang sesuai */
+}
+
+/* CTA Button Styling */
+.homepage__cta {
+    background-color: var(--first-color); /* Warna tombol */
+    color: #fff; /* Warna teks tombol */
+    padding: 0.75rem 1.5rem; /* Padding tombol */
+    border-radius: 30px; /* Membulatkan tombol */
+    text-decoration: none; /* Hilangkan underline */
+    font-weight: var(--font-semi-bold); /* Semi-bold */
+    transition: background-color 0.3s ease; /* Transisi hover */
+}
+
+.homepage__cta:hover {
+    background-color: var(--first-color-alt); /* Warna hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .homepage__about-title {
+        text-align: left;
+        text-decoration: underline;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 20px 0;
+        margin-bottom: 2.5rem;
+    }
+
+    .homepage__subheading {
+        text-align: left;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        color: #fff;
+    }
+
+    .homepage__description {
+        font-size: 1rem; /* Ukuran deskripsi lebih kecil di mobile */ 
+    }
+
+    .homepage__cta {
+        padding: 0.5rem 1rem; /* Padding lebih kecil di mobile */
+    }
+
+    .homepage__hero-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Desktop Responsiveness */
+@media (min-width: 601px) {
+    .homepage__hero {
+        max-width: 900px; /* Sedikit lebih lebar untuk desktop */
+        margin-top: 0rem; /* Memberi spasi lebih */
+    }
+
+    .homepage__description {
+        font-size: 1.4rem; /* Deskripsi lebih besar untuk desktop */
+    }
+
+    .homepage__cta {
+        padding: 1rem 2rem; /* Tombol lebih besar di desktop */
+    }
+}
+
+/* General Homepage Styles */
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--background-color); /* Ganti dengan warna latar yang sesuai */
+  }
+  
+  .homepage__hero {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+  }
+
+  .homepage__about-title {
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    line-height: 1;
+    font-size: 7px;
+    font-weight: bold;
+    color: #fff;
+}
+
+  .homepage__subheading {
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+  
+  .homepage__description {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    text-align: justify;
+    margin-top: 2rem;
+  }
+  
+  .homepage__cta {
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: var(--font-semi-bold);
+    transition: background-color 0.3s ease;
+  }
+  
+  .homepage__cta:hover {
+    background-color: var(--first-color-alt);
+  }
+  
+  /* Program Section Styles */
+  .program-section {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 4rem;
+    text-align: left;
+  }
+  
+  .program__title {
+    font-size: 2rem;
+    font-weight: var(--font-bold);
+    color: #fff;
+    padding: 2rem;
+  }
+
+  .program_tittle-about{
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    line-height: 1;
+    font-size: 7px;
+    font-weight: bold;
+  }
+
+  .program__image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem;
+  }
+
+  .program__content {
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .program__description {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    text-align: justify;
+  }
+  
+  .program__cta {
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: var(--font-semi-bold);
+    transition: background-color 0.3s ease;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .program__cta:hover {
+    background-color: var(--first-color-alt);
+  }
+  
+  /* Responsive Styles for Mobile */
+  @media (max-width: 600px) {  
+    .homepage__description {
+      font-size: 8px;
+      line-height: 2; /* Mengatur jarak antar baris, bisa disesuaikan */
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .homepage__subheading {
+        text-align: left;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .program__title {
+      font-size: 15px;
+      font-weight: bold;
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+
+    .program_tittle-about{
+        text-align: left;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 9px;
+        line-height: 1;
+        font-size: 7px;
+        font-weight: bold;
+        color: #fff;
+      }
+  
+    .program__description {
+      font-size: 8px;
+      line-height: 2; /* Mengatur jarak antar baris, bisa disesuaikan */
+    }
+
+    .program-image {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        margin-bottom: 23px;
+      }
+  }
+  
+/* News Section Styles */
+.news-section {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 4rem;
+    text-align: left;
+  }
+  
+  .news__title {
+    font-size: 2rem;
+    font-weight: var(--font-bold);
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .news__headline {
+    font-size: 1.25rem;
+    font-weight: var(--font-bold);
+    color: #fff;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .headline-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .news__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .news__description {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 2.5rem;
+    text-align: justify;
+  }
+  
+  .news__cta {
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: var(--font-semi-bold);
+    transition: background-color 0.3s ease;
+    margin-bottom: 2rem; /* Adjust spacing */
+  }
+
+  .news__cta:hover {
+    background-color: var(--first-color-alt);
+  }
+
+  .news2__cta {
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: var(--font-semi-bold);
+    transition: background-color 0.3s ease;
+    margin-bottom: 2rem; /* Adjust spacing */
+  }
+  
+  .news2__cta:hover {
+    background-color: var(--first-color-alt);
+  }
+  
+  /* Responsive Styles for Mobile */
+  @media (max-width: 600px) {
+
+    .news__title {
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+
+    .news__headline {
+        text-align: left;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 10px;
+        line-height: 1;
+        font-size: 7px;
+        font-weight: bold;
+    }
+
+    .news__description {
+      font-size: 8px;
+      margin-top: 8px;
+    }
+  
+    .news__cta {
+      font-size: 1rem; /* Adjust button font size for mobile */
+    }
+  }
+  
