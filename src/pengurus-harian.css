@@ -1,0 +1,56 @@
+/* PengurusHarian.css */
+
+.pengurus-harian {
+    padding: 20px;
+    background-color: #05010128; /* Light background color */
+    border-radius: 8px;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    color: #ffffff; /* Dark color for the title */
+  }
+  
+  .members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Space between cards */
+  }
+  
+  .member-card {
+    background-color: #fff; /* White background for cards */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .member-card:hover {
+    transform: translateY(-5px); /* Hover effect */
+  }
+  
+  .member-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 10px;
+  }
+  
+  .member-name {
+    font-size: 20px;
+    color: #333; /* Dark color for member name */
+  }
+  
+  .member-role {
+    font-size: 16px;
+    color: #777; /* Lighter color for member role */
+  }
+  
+  .member-introduction {
+    font-size: 14px;
+    color: #555; /* Medium color for introduction text */
+  }
+  
