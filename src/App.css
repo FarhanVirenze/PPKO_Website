@@ -37,3 +37,43 @@
   }
 }
 
+/* Custom scrollbar for desktop */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f4f4f4; /* Background color of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2193b0, #6dd5ed); /* Gradient color for the scrollbar thumb */
+  border-radius: 10px;
+  border: 2px solid #f4f4f4; /* Border to create space between thumb and track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #6dd5ed, #2193b0); /* Hover effect for thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f4f4f4; /* Background color of the scrollbar track */
+}
+
+/* Responsive Scrollbar for Mobile (target iPhone 11 and similar devices) */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 5px; /* Smaller scrollbar for mobile */
+    background-color: transparent; /* Can be transparent to reduce distraction */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #2193b0, #6dd5ed); /* Keep the same gradient */
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #6dd5ed, #2193b0);
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Make track transparent for a cleaner look on mobile */
+  }
+}
