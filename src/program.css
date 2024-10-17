@@ -1,0 +1,98 @@
+/* Program Section */
+.programm-section {
+    padding: 1rem;
+    background-color: #101010;
+}
+
+.programm__title {
+    text-align: left;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 0rem;
+    margin-left: 8px;
+}
+
+.programm-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 2.5rem;
+}
+
+.programm-item {
+    padding: 15px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 500px;
+    background-color: #1e1e1e;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.programm-item:hover {
+    transform: translateY(-10px);
+}
+
+.programm-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.programm-image:hover {
+    transform: scale(1.05);
+}
+
+/* Headline Styling */
+.programm__headline {
+    font-size: 10px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 0.75rem;
+}
+
+/* Toggle Button */
+.programm__toggle-btn {
+    background-color: #00b4d8;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: var(--font-semi-bold);
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.programm__toggle-btn:hover {
+    background-color: #0077b6;
+    transform: scale(1.05);
+}
+
+/* Description with fade in/out effect */
+.programm__description {
+    font-size: 9px;
+    color: #cfcfcf;
+    text-align: justify;
+    line-height: 2;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+/* Active class to show description with fade effect */
+.programm__description.active {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 1rem;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
