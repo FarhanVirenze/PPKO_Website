@@ -66,10 +66,17 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li className="nav__item">
-        <NavLink to="/get-started" className="nav__link nav__cta" onClick={closeMobileMenu}>
-          Luaran
-        </NavLink>
-      </li>
+  <NavLink
+    to="#"
+    className="nav__link nav__cta"
+    onClick={() => {
+      document.getElementById("outcomes-section").scrollIntoView({ behavior: "smooth" });
+      closeMobileMenu(); // If you have a function to close the mobile menu
+    }}
+  >
+    Luaran
+  </NavLink>
+</li>
     </ul>
   );
 
@@ -79,7 +86,7 @@ const Navbar = () => {
         <NavLink to="/" className="nav__logo">
           <div className="nav__logo-container">
             <img src={Logo} alt="PPKO Ormawa HIMFA UMY" className="nav__logo-img" />
-            <span className="nav__logo-text">PPKO Ormawa HIMFA UMY</span>
+            <span className="nav__logo-text">PPK Ormawa HIMFA UMY</span>
           </div>
         </NavLink>
         {isMobile && (
