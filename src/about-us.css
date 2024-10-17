@@ -13,9 +13,14 @@
     width: 100%;
     object-fit: cover; 
     max-height: 600px;
-    margin-top: 2.5rem;
+    margin-top: 0rem;
+    transition: transform 0.3s; 
   }
   
+  .about-us__image:hover {
+    transform: scale(1.05);
+  }
+
   /* Title and Subheading Styling */
   .about__title {
     text-align: left;
@@ -55,6 +60,14 @@
   
   .division {
     margin-bottom: 2rem;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .division:hover {
+    transform: translateY(-10px);
   }
   
   .division__image {
@@ -63,8 +76,13 @@
     height: auto;
     border-radius: 10px;
     margin-bottom: 1rem;
+    transition: transform 0.3s; 
   }
   
+  .division__image:hover {
+    transform: scale(1.08);
+  }
+
   .division__name {
     font-size: 16px;
     font-weight: bold;
@@ -100,11 +118,11 @@
     }
 
     .about__description {
-        font-size: 8px;
+        font-size: 9px;
         line-height: 2; /* Mengatur jarak antar baris, bisa disesuaikan */
         margin-top: 1rem;
         margin-bottom: 3rem;
         text-align: justify;
       }
   }
-  
+ 
